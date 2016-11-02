@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Adivinar</title>
+        <link href="adivina.css" rel="stylesheet">
+        <script src="adivinar.js"></script>
+    </head>
+    
+    <body onload="nuevaPartida()">
+        <h1>Adivina</h1>
+        <p>Tienes 10 intentos para adivinar un número entre 1 y 100.</p>
+        <form>
+            <label>¿Qué número es?</label>
+            <input type="number" id="posible">
+            <input type="button" onclick="probar()" value="PROBAR">
+            <input type="button" onclick="nuevaPartida()" value="NUEVA PARTIDA">
+            <output id="estado"></output>
+        </form>
+    </body>
+</html>
